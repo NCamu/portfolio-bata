@@ -21,8 +21,8 @@ export default function Portfolio() {
   const [glitchActive, setGlitchActive] = useState(false);
 
   const normalName = "CAMUZARD Nicolas";
-  const japName = "カミュザール 二コラ";
-  const twName = "卡穆扎爾 尼可拉";
+  // const japName = "カミュザール 二コラ";
+  // const twName = "卡穆扎爾 尼可拉";
 
   // Mapping direct des segments
   const nameSegments = [
@@ -98,7 +98,7 @@ export default function Portfolio() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false);
@@ -112,38 +112,38 @@ export default function Portfolio() {
     {
       title: "CONCIERGE IA - Application web",
       description:
-        "creation d'une IA de conciergerie pour les hotels, capable de repondre aux questions des clients, de les aider a reserver des services et de leur fournir des informations sur l'hotel et les environs, couplé a une api meteo, et un algorythme de recommandation d'activité suivant les preference client ",
+        "creation d&apos;une IA de conciergerie pour les hotels, capable de repondre aux questions des clients, de les aider a reserver des services et de leur fournir des informations sur l&apos;hotel et les environs, couplé a une api meteo, et un algorythme de recommandation d&apos;activité suivant les preference client ",
       tech: ["python", "open ai", "llama2"],
-      role: "SCRUM Master et en charge du developpement du RAG et de l'embedding",
+      role: "SCRUM Master et en charge du developpement du RAG et de l&apos;embedding",
       challenge:
-        "ce fut la premiere fois que je travaillais avec des modeles de langage, il a fallu apprendre a les integrer, a gerer les couts d'appel aux api, et a optimiser les performances tout en minimisant les couts",
+        "ce fut la premiere fois que je travaillais avec des modeles de langage, il a fallu apprendre a les integrer, a gerer les couts d&apos;appel aux api, et a optimiser les performances tout en minimisant les couts",
       solution:
-        "Mise en place d'une architecture optimisée avec llama_index gestion du cache local et synchronisation intelligente",
+        "Mise en place d&apos;une architecture optimisée avec llama_index gestion du cache local et synchronisation intelligente",
       github: "#",
       demo: "https://conciergerie-ai.base44.app/",
     },
     {
       title: "ZELDAMAN - jeux 2D en java",
       description:
-        "creation d'un jeux 2D en java inspiré de zelda et Bomberman, avec gestion des collisions, des animations, des inputs utilisateur et de l'affichage a l'ecran",
+        "creation d&apos;un jeux 2D en java inspiré de zelda et Bomberman, avec gestion des collisions, des animations, des inputs utilisateur et de l&apos;affichage a l&apos;ecran",
       tech: ["java", "javafx"],
-      role: "Développement d'asset graphique,et d'Objets (OOP)",
+      role: "Développement d&apos;asset graphique,et d&apos;Objets (OOP)",
       challenge:
-        "apprendre le java et le OOP, apprendre javafx, gerer les collisions, les animations, les inputs utilisateur et l'affichage a l'ecran",
+        "apprendre le java et le OOP, apprendre javafx, gerer les collisions, les animations, les inputs utilisateur et l&apos;affichage a l&apos;ecran",
       solution:
-        "Mise en place d'une architecture optimisée avec gestion du cache local et synchronisation intelligente",
+        "Mise en place d&apos;une architecture optimisée avec gestion du cache local et synchronisation intelligente",
       github: "https://github.com/EpitechMscProPromo2028/T-JAV-501-NCE_1.git",
       demo: "#",
     },
     {
-      title: "JobBoard - site web de recherche d'emploi",
+      title: "JobBoard - site web de recherche d&apos;emploi",
       description: " ",
       tech: ["HTML+CSS", "JavaScript", "PHP", "SQL"],
-      role: "Développement d'asset graphique",
+      role: "Développement d&apos;asset graphique",
       challenge:
         "apprendre le php et le SQL, faire une interface utilisateur, gerer les sessions utilisateurs, les formulaires et la securité des donnees",
       solution:
-        "Mise en place d'une architecture optimisée avec gestion du cache local et synchronisation intelligente",
+        "Mise en place d&apos;une architecture optimisée avec gestion du cache local et synchronisation intelligente",
       github: "#",
       demo: "#",
     },
@@ -155,9 +155,9 @@ export default function Portfolio() {
       tech: ["python"],
       role: "Développeur Fullstack",
       challenge:
-        "apprendre le python,faire une interface dans le terminal, importé un dictionnaire de mot et l'utilisé,et prevoir le bon fonctionnement du jeux meme sans import",
+        "apprendre le python,faire une interface dans le terminal, importé un dictionnaire de mot et l&apos;utilisé,et prevoir le bon fonctionnement du jeux meme sans import",
       solution:
-        "Mise en place d'une architecture optimisée avec gestion du cache local et synchronisation intelligente",
+        "Mise en place d&apos;une architecture optimisée avec gestion du cache local et synchronisation intelligente",
       github: "#",
 
       demo: "/hangman.py",
@@ -165,13 +165,13 @@ export default function Portfolio() {
     {
       title: "MooveIt (dans une team de 5)- Application Mobile",
       description:
-        "Application gamifiée de suivi d'activité physique avec défis entre amis",
+        "Application gamifiée de suivi d&apos;activité physique avec défis entre amis",
       tech: ["React-Native", "TypeScript", "Node.js", "MongoDB"],
       role: "Développeur Fullstack",
       challenge:
-        "cree  une aplication mobile gamifié et performante pour monitoré l'évolutions des utilisateurs, avec un accompagnement video. et mise en relation (suivant leurs preferences) des utilisateurs",
+        "cree  une aplication mobile gamifié et performante pour monitoré l&apos;évolutions des utilisateurs, avec un accompagnement video. et mise en relation (suivant leurs preferences) des utilisateurs",
       solution:
-        "Mise en place d'une architecture optimisée avec gestion du cache local et synchronisation intelligente",
+        "Mise en place d&apos;une architecture optimisée avec gestion du cache local et synchronisation intelligente",
       github: "#",
       demo: "#",
     },
@@ -214,7 +214,7 @@ export default function Portfolio() {
         "application de geolocalisation et de gestion de favoris de lieux",
       tech: ["React-Native", "Express", "Mongoose", "Bcrypt"],
       role: "Développeur Backend",
-      challenge: "Créer un système d'authentification robuste et sécurisé",
+      challenge: "Créer un système d&apos;authentification robuste et sécurisé",
       solution:
         "Architecture middleware avec validation des tokens, refresh tokens et hashage bcrypt",
       github: "#",
@@ -223,7 +223,7 @@ export default function Portfolio() {
     {
       title: "Hackatweet (hackathon en équipe) - clone de Twitter",
       description:
-        "création d'un clone de twitter avec fonctionnalités de base telles que la publication de tweets, le suivi d'utilisateurs et la messagerie instantanée",
+        "création d&apos;un clone de twitter avec fonctionnalités de base telles que la publication de tweets, le suivi d&apos;utilisateurs et la messagerie instantanée",
       tech: ["React", "mongoose", "MongoDB", "tokenify", "Express"],
       role: "Développeur frontend",
       challenge: "créer en 72h un site fonctionnel avec une bonne UX/UI",
@@ -234,7 +234,7 @@ export default function Portfolio() {
     {
       title: "MorningNews",
       description:
-        "agrégateur d'articles de presse personnalisés avec filtres par catégorie et source",
+        "agrégateur d&apos;articles de presse personnalisés avec filtres par catégorie et source",
       tech: ["React", "mongoose", "MongoDB", "tokenify", "Express"],
       role: "Développeur fullStack",
       challenge:
@@ -248,7 +248,7 @@ export default function Portfolio() {
     {
       title: "myMOOVIZ - application web de recommandation de films",
       description:
-        "création d'un clone de twitter avec fonctionnalités de base telles que la publication de tweets, le suivi d'utilisateurs et la messagerie instantanée",
+        "création d&apos;un clone de twitter avec fonctionnalités de base telles que la publication de tweets, le suivi d&apos;utilisateurs et la messagerie instantanée",
       tech: ["React", "mongoose", "MongoDB", "tokenify", "Express"],
       role: "Développeur fullStack",
       challenge: "utiliser une API externe pour les recommandations de films",
@@ -258,9 +258,9 @@ export default function Portfolio() {
     },
     {
       title:
-        "Tickethack (hackathon en équipe) - clone d'un site de vente de billets SNCF",
+        "Tickethack (hackathon en équipe) - clone d&apos;un site de vente de billets SNCF",
       description:
-        "Creation d'un clone d'un site de vente de billets SNCF avec fonctionnalités de recherche, réservation et paiement",
+        "Creation d&apos;un clone d&apos;un site de vente de billets SNCF avec fonctionnalités de recherche, réservation et paiement",
       tech: [
         "HTML+CSS",
         "mongoose",
@@ -278,11 +278,11 @@ export default function Portfolio() {
     },
     {
       title: "WeatherApp - application web météo",
-      description: "creation d'un clone de weather",
+      description: "creation d&apos;un clone de weather",
       tech: ["React", "API météo", "CSS", "json"],
       role: "Développeur frontend",
       challenge:
-        "fetchér/scapper l'api de wether et afficher dynamiquement les données",
+        "fetchér/scapper l&apos;api de wether et afficher dynamiquement les données",
       solution: "#",
       github: "#",
       demo: "#",
@@ -329,7 +329,7 @@ export default function Portfolio() {
       "Pédagogie",
       "Gestion de projet",
       "Vente",
-      "Travail d'équipe",
+      "Travail d&apos;équipe",
     ],
     spoken: ["Français (natif)", "Anglais (professionnel)", "Japonais (B2)"],
   };
@@ -424,7 +424,7 @@ export default function Portfolio() {
           </p>
           <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
             Je crée des applications web et mobile modernes, performantes et
-            centrées sur l'expérience utilisateur tout en respectant le S.E.O.
+            centrées sur l&apos;expérience utilisateur tout en respectant le S.E.O.
             ;D
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -466,7 +466,8 @@ export default function Portfolio() {
   rounded-xl 
   p-6 
   hover:shadow-lg 
-  transition-all 
+  transition-[shadow_1s, bg_1s
+  ] 
   duration-700"
               >
                 <h3 className="text-2xl font-bold text-slate-900 mb-3">
@@ -545,16 +546,16 @@ export default function Portfolio() {
           >
             {/*</p> <p className="text-lg text-slate-600 leading-relaxed">*/}
             Passionné par le développement web et mobile, je me suis reconverti
-            dans la tech après 10 ans d'expérience en vente. Cette transition
-            m'a permis d'acquérir une double compétence technique et
-            relationnelle précieuse en entreprise. J'aime créer des solutions
+            dans la tech après 10 ans d&apos;expérience en vente. Cette transition
+            m&apos;a permis d&apos;acquérir une double compétence technique et
+            relationnelle précieuse en entreprise. J&apos;aime créer des solutions
             élégantes à des problèmes complexes, en mettant toujours
-            l'utilisateur au centre de mes préoccupations. Ma philosophie : du
+            l&apos;utilisateur au centre de mes préoccupations. Ma philosophie : du
             code propre, des interfaces intuitives et une communication claire
-            avec les équipes. J'ai intégré l'école Epitech Nice en 2025 afin
-            d'approfondir mes connaissances. Je suis actuellement à la recherche
-            d'une alternance pour continuer à développer mes compétences au sein
-            d'une équipe dynamique.
+            avec les équipes. J&apos;ai intégré l&apos;école Epitech Nice en 2025 afin
+            d&apos;approfondir mes connaissances. Je suis actuellement à la recherche
+            d&apos;une alternance pour continuer à développer mes compétences au sein
+            d&apos;une équipe dynamique.
           </p>
         </div>
       </section>
@@ -666,7 +667,7 @@ export default function Portfolio() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-slate-900 mb-8">Contact</h2>
           <p className="text-lg text-slate-600 mb-10">
-            Envie de discuter d'un projet ou d'une opportunité ? N'hésitez pas à
+            Envie de discuter d&apos;un projet ou d&apos;une opportunité ? N&apos;hésitez pas à
             me contacter !
           </p>
 
