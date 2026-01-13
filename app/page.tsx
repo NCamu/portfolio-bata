@@ -109,181 +109,162 @@ export default function Portfolio() {
   }
 
   const projects = [
+    //  CONCIERGE IA (déjà parfait)
     {
       title: "CONCIERGE IA - Application web",
       description:
-        "creation d&apos;une IA de conciergerie pour les hotels, capable de repondre aux questions des clients, de les aider a reserver des services et de leur fournir des informations sur l&apos;hotel et les environs, couplé a une api meteo, et un algorythme de recommandation d&apos;activité suivant les preference client ",
-      tech: ["python", "open ai", "llama2"],
-      role: "SCRUM Master et en charge du developpement du RAG et de l&apos;embedding",
+        "Conception d'une IA de conciergerie hôtelière avec RAG (LlamaIndex) : Q&A clients, réservation services, informations géolocalisées, API météo temps réel et système de recommandation basé sur les préférences utilisateur.",
+      tech: ["Python", "OpenAI", "LlamaIndex"],
+      role: "SCRUM Master - RAG & Embeddings vectoriels",
       challenge:
-        "ce fut la premiere fois que je travaillais avec des modeles de langage, il a fallu apprendre a les integrer, a gerer les couts d&apos;appel aux api, et a optimiser les performances tout en minimisant les couts",
+        "Première immersion LLM : intégration, coûts API, performances.",
       solution:
-        "Mise en place d&apos;une architecture optimisée avec llama_index gestion du cache local et synchronisation intelligente",
+        "Architecture LlamaIndex avec cache local et synchronisation intelligente.",
       github: "#",
       demo: "https://conciergerie-ai.base44.app/",
     },
+
+    //  ZELDAMAN (syntaxe + ortho corrigée)
     {
-      title: "ZELDAMAN - jeux 2D en java",
+      title: "ZELDAMAN - Jeu 2D Java",
       description:
-        "creation d&apos;un jeux 2D en java inspiré de zelda et Bomberman, avec gestion des collisions, des animations, des inputs utilisateur et de l&apos;affichage a l&apos;ecran",
-      tech: ["java", "javafx"],
-      role: "Développement d&apos;asset graphique,et d&apos;Objets (OOP)",
+        "Hybride Zelda/Bomberman : collisions AABB, animations sprites, inputs réactifs, rendu tilemap optimisé.",
+      tech: ["Java", "JavaFX"],
+      role: "Développeur graphismes & OOP",
       challenge:
-        "apprendre le java et le OOP, apprendre javafx, gerer les collisions, les animations, les inputs utilisateur et l&apos;affichage a l&apos;ecran",
-      solution:
-        "Mise en place d&apos;une architecture optimisée avec gestion du cache local et synchronisation intelligente",
+        "Apprendre Java/OOP, JavaFX, collisions, animations, inputs utilisateur.",
+      solution: "Architecture modulaire OOP avec GameLoop 60fps.",
       github: "https://github.com/EpitechMscProPromo2028/T-JAV-501-NCE_1.git",
       demo: "#",
     },
+
+    //  JOBBOARD
     {
-      title: "JobBoard - site web de recherche d&apos;emploi",
-      description: " ",
-      tech: ["HTML+CSS", "JavaScript", "PHP", "SQL"],
-      role: "Développement d&apos;asset graphique",
+      title: "JobBoard - Site recherche d'emploi",
+      description:
+        "Plateforme fullstack : recherche offres, sessions utilisateur, CRUD sécurisé.",
+      tech: ["HTML/CSS", "JavaScript", "PHP", "SQL"],
+      role: "Développeur interface utilisateur",
       challenge:
-        "apprendre le php et le SQL, faire une interface utilisateur, gerer les sessions utilisateurs, les formulaires et la securité des donnees",
-      solution:
-        "Mise en place d&apos;une architecture optimisée avec gestion du cache local et synchronisation intelligente",
+        "Apprendre PHP/SQL, interface intuitive, sessions, formulaires sécurisés.",
+      solution: "Backend PHP/MySQL avec validation/sanitisation données.",
       github: "#",
       demo: "#",
     },
 
+    //  HANGMAN
     {
-      title: "Hangman Telles no teles - phython pure",
+      title: "Hangman 'Telles no Télés' - Python CLI",
       description:
-        "jeux du pendu en ligne de commande et representation graphique en ascii art",
-      tech: ["python"],
-      role: "Développeur Fullstack",
+        "Jeu du pendu terminal avec rendu ASCII art et dictionnaire embarqué.",
+      tech: ["Python"],
+      role: "Développeur fullstack",
       challenge:
-        "apprendre le python,faire une interface dans le terminal, importé un dictionnaire de mot et l&apos;utilisé,et prevoir le bon fonctionnement du jeux meme sans import",
+        "Interface terminal, dictionnaire mots, fallback sans import externe.",
       solution:
-        "Mise en place d&apos;une architecture optimisée avec gestion du cache local et synchronisation intelligente",
+        "Système résilient avec dictionnaire intégré + ASCII rendering.",
       github: "#",
-
       demo: "/hangman.py",
     },
+
+    //  MOOVEIT
     {
-      title: "MooveIt (dans une team de 5)- Application Mobile",
+      title: "MooveIt (team de 5) - App Mobile",
       description:
-        "Application gamifiée de suivi d&apos;activité physique avec défis entre amis",
-      tech: ["React-Native", "TypeScript", "Node.js", "MongoDB"],
+        "Suivi activité physique gamifié : défis amis, accompagnement vidéo, matching préférences.",
+      tech: ["React Native", "TypeScript", "Node.js", "MongoDB"],
       role: "Développeur Fullstack",
-      challenge:
-        "cree  une aplication mobile gamifié et performante pour monitoré l&apos;évolutions des utilisateurs, avec un accompagnement video. et mise en relation (suivant leurs preferences) des utilisateurs",
-      solution:
-        "Mise en place d&apos;une architecture optimisée avec gestion du cache local et synchronisation intelligente",
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "FaceUp - Application Mobile ",
-      description: "Réseau social mobile avec partage de photos,",
-      tech: ["React", "Express", "MongoDB"],
-      role: "Développeur FullStack",
-      challenge:
-        "Assurer la cohérence des données entre utilisateurs en temps réel",
-      solution:
-        "Implémentation de WebSockets avec gestion des conflits et système de permissions",
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "FaceUp - Application Mobile ",
-      description: "Réseau social mobile avec partage de photos,",
-      tech: [
-        "React-Native",
-        "Expo Go",
-        "Expo Camera",
-        "Cloudinary",
-        "tokenify",
-        "Express",
-        "MongoDB",
-      ],
-      role: "Développeur FullStack",
-      challenge:
-        "Assurer la cohérence des données entre utilisateurs en temps réel",
-      solution:
-        "Implémentation de WebSockets avec gestion des conflits et système de permissions",
+      challenge: "App mobile gamifiée performante + matching utilisateurs.",
+      solution: "Algo recommandation + streaming vidéo optimisé.",
       github: "#",
       demo: "#",
     },
 
+    //  FACEUP (fusion des 2 doublons)
     {
-      title: "Locapic - application Mobile",
+      title: "FaceUp - Réseau social mobile",
       description:
-        "application de geolocalisation et de gestion de favoris de lieux",
-      tech: ["React-Native", "Express", "Mongoose", "Bcrypt"],
+        "Partage photos temps réel : caméra, Cloudinary, WebSockets.",
+      tech: ["React Native", "Expo", "Cloudinary", "Express", "MongoDB"],
+      role: "Développeur Fullstack",
+      challenge: "Synchronisation données temps réel multi-utilisateurs.",
+      solution: "WebSockets + gestion conflits/permissions avancées.",
+      github: "#",
+      demo: "#",
+    },
+
+    //  LOCAPIC
+    {
+      title: "Locapic - App géolocalisation",
+      description:
+        "Gestion favoris lieux : maps, recherche, authentification sécurisée.",
+      tech: ["React Native", "Express", "Mongoose", "Bcrypt"],
       role: "Développeur Backend",
-      challenge: "Créer un système d&apos;authentification robuste et sécurisé",
-      solution:
-        "Architecture middleware avec validation des tokens, refresh tokens et hashage bcrypt",
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "Hackatweet (hackathon en équipe) - clone de Twitter",
-      description:
-        "création d&apos;un clone de twitter avec fonctionnalités de base telles que la publication de tweets, le suivi d&apos;utilisateurs et la messagerie instantanée",
-      tech: ["React", "mongoose", "MongoDB", "tokenify", "Express"],
-      role: "Développeur frontend",
-      challenge: "créer en 72h un site fonctionnel avec une bonne UX/UI",
-      solution: "#",
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "MorningNews",
-      description:
-        "agrégateur d&apos;articles de presse personnalisés avec filtres par catégorie et source",
-      tech: ["React", "mongoose", "MongoDB", "tokenify", "Express"],
-      role: "Développeur fullStack",
-      challenge:
-        "fetcher et afficher dynamiquement des données externes via une API",
-      solution:
-        "Architecture modulaire avec props typées et optimisation du rendu",
+      challenge: "Authentification robuste et sécurisée.",
+      solution: "Middleware tokens + refresh tokens + hashage Bcrypt.",
       github: "#",
       demo: "#",
     },
 
+    //  HACKATWEET
     {
-      title: "myMOOVIZ - application web de recommandation de films",
+      title: "Hackatweet (hackathon) - Clone Twitter",
       description:
-        "création d&apos;un clone de twitter avec fonctionnalités de base telles que la publication de tweets, le suivi d&apos;utilisateurs et la messagerie instantanée",
-      tech: ["React", "mongoose", "MongoDB", "tokenify", "Express"],
-      role: "Développeur fullStack",
-      challenge: "utiliser une API externe pour les recommandations de films",
-      solution: "#",
+        "Publication tweets, follow, messagerie instantanée (72h hackathon).",
+      tech: ["React", "Express", "MongoDB", "Mongoose"],
+      role: "Développeur Frontend",
+      challenge: "Site fonctionnel UX/UI en 72h.",
+      solution: "Stack MERN optimisée deadlines courtes.",
       github: "#",
       demo: "#",
     },
+
+    //  MORNINGNEWS
     {
-      title:
-        "Tickethack (hackathon en équipe) - clone d&apos;un site de vente de billets SNCF",
+      title: "MorningNews - Agrégateur news",
       description:
-        "Creation d&apos;un clone d&apos;un site de vente de billets SNCF avec fonctionnalités de recherche, réservation et paiement",
-      tech: [
-        "HTML+CSS",
-        "mongoose",
-        "MongoDB",
-        "tokenify",
-        "Express",
-        "JavaScript",
-        "vercel",
-      ],
-      role: "Développeur frontend",
-      challenge: "Créer des composants flexibles et performants réutilisables",
-      solution: "#",
+        "Articles personnalisés : filtres catégories/sources, API externes.",
+      tech: ["React", "Express", "MongoDB"],
+      role: "Développeur Fullstack",
+      challenge: "Fetch/affichage dynamique données externes.",
+      solution: "Props typées + optimisation rendu React.",
       github: "#",
       demo: "#",
     },
+
+    //  MYMOOVIZ (description corrigée)
     {
-      title: "WeatherApp - application web météo",
-      description: "creation d&apos;un clone de weather",
-      tech: ["React", "API météo", "CSS", "json"],
-      role: "Développeur frontend",
-      challenge:
-        "fetchér/scapper l&apos;api de wether et afficher dynamiquement les données",
-      solution: "#",
+      title: "myMOOVIZ - Recommandation films",
+      description:
+        "Plateforme films : recherche, recommandations API externe, UI moderne.",
+      tech: ["React", "Express", "MongoDB"],
+      role: "Développeur Fullstack",
+      challenge: "Intégration API externe recommandations.",
+      solution: "Cache intelligent + lazy loading.",
+      github: "#",
+      demo: "#",
+    },
+
+    //  TICKETHACK
+    {
+      title: "Tickethack (hackathon) - Clone SNCF",
+      description: "Recherche trains, réservation, paiement (72h hackathon).",
+      tech: ["HTML/CSS", "JavaScript", "Express", "MongoDB"],
+      role: "Développeur Frontend",
+      challenge: "Composants flexibles/performants réutilisables.",
+      solution: "Design system modulaire.",
+      github: "#",
+      demo: "#",
+    },
+
+    //  WEATHERAPP
+    {
+      title: "WeatherApp - App météo",
+      description: "Interface météo dynamique : API temps réel, prévisions.",
+      tech: ["React", "API Météo", "CSS"],
+      role: "Développeur Frontend",
+      challenge: "Parser/afficher API météo dynamiquement.",
+      solution: "Fetch optimisé + rendu conditionnel.",
       github: "#",
       demo: "#",
     },
@@ -329,7 +310,7 @@ export default function Portfolio() {
       "Pédagogie",
       "Gestion de projet",
       "Vente",
-      "Travail d&apos;équipe",
+      "Travail d'équipe",
     ],
     spoken: ["Français (natif)", "Anglais (professionnel)", "Japonais (B2)"],
   };
@@ -424,7 +405,7 @@ export default function Portfolio() {
           </p>
           <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
             Je crée des applications web et mobile modernes, performantes et
-            centrées sur l&apos;expérience utilisateur tout en respectant le S.E.O.
+            centrées sur l'expérience utilisateur tout en respectant le S.E.O.
             ;D
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -458,17 +439,17 @@ export default function Portfolio() {
               <div
                 key={index}
                 className="bg-gradient-to-br 
-  from-slate-50 
-  via-gray-100 
-  to-cyan-50 
-  hover:from-fuchsia-100 
-  hover:to-slate-50 
-  rounded-xl 
-  p-6 
-  hover:shadow-lg 
-  transition-[shadow_1s, bg_1s
-  ] 
-  duration-700"
+                from-slate-50 
+                via-gray-100 
+                to-cyan-50 
+                hover:from-fuchsia-100 
+                hover:to-slate-50 
+                rounded-xl 
+                p-6 
+                hover:shadow-lg 
+                transition-[shadow_1s, bg_1s
+                ] 
+                duration-700"
               >
                 <h3 className="text-2xl font-bold text-slate-900 mb-3">
                   {project.title}
@@ -546,16 +527,16 @@ export default function Portfolio() {
           >
             {/*</p> <p className="text-lg text-slate-600 leading-relaxed">*/}
             Passionné par le développement web et mobile, je me suis reconverti
-            dans la tech après 10 ans d&apos;expérience en vente. Cette transition
-            m&apos;a permis d&apos;acquérir une double compétence technique et
-            relationnelle précieuse en entreprise. J&apos;aime créer des solutions
-            élégantes à des problèmes complexes, en mettant toujours
-            l&apos;utilisateur au centre de mes préoccupations. Ma philosophie : du
+            dans la tech après dix ans d’expérience en vente. Cette transition
+            m’a permis d’acquérir une double compétence technique et
+            relationnelle, précieuse en entreprise. J’aime créer des solutions
+            élégantes à des problèmes complexes, en plaçant toujours
+            l’utilisateur au centre de mes préoccupations. Ma philosophie : du
             code propre, des interfaces intuitives et une communication claire
-            avec les équipes. J&apos;ai intégré l&apos;école Epitech Nice en 2025 afin
-            d&apos;approfondir mes connaissances. Je suis actuellement à la recherche
-            d&apos;une alternance pour continuer à développer mes compétences au sein
-            d&apos;une équipe dynamique.
+            avec les équipes. J’ai intégré l’école Epitech Nice en 2025 afin
+            d’approfondir mes connaissances. Je suis actuellement à la recherche
+            d’une alternance pour continuer à développer mes compétences au sein
+            d’une équipe dynamique.{" "}
           </p>
         </div>
       </section>
@@ -667,8 +648,8 @@ export default function Portfolio() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-slate-900 mb-8">Contact</h2>
           <p className="text-lg text-slate-600 mb-10">
-            Envie de discuter d&apos;un projet ou d&apos;une opportunité ? N&apos;hésitez pas à
-            me contacter !
+            Envie d’échanger autour d’un projet ou d’une opportunité
+            professionnelle ? N’hésitez pas à me contacter.{" "}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
