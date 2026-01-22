@@ -311,6 +311,11 @@ export default function Portfolio() {
       "Gestion de projet",
       "Vente",
       "Travail d'équipe",
+      "Leadership",
+      "Adaptabilité",
+      "Résolution de problèmes",
+      "Esprit analytique",
+      "Gestion du temps",
     ],
     spoken: ["Français (natif)", "Anglais (professionnel)", "Japonais (B2)"],
   };
@@ -339,10 +344,10 @@ export default function Portfolio() {
                     {item === "apropos"
                       ? "À propos"
                       : item === "competences"
-                      ? "Compétences"
-                      : item}
+                        ? "Compétences"
+                        : item}
                   </button>
-                )
+                ),
               )}
             </div>
 
@@ -370,10 +375,10 @@ export default function Portfolio() {
                     {item === "apropos"
                       ? "À propos"
                       : item === "competences"
-                      ? "Compétences"
-                      : item}
+                        ? "Compétences"
+                        : item}
                   </button>
-                )
+                ),
               )}
             </div>
           </div>
