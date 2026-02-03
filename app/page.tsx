@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import GlitchName from "./components/GlitchName";
 import {
   Menu,
   X,
@@ -18,62 +19,8 @@ import {
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("accueil");
-  const [glitchActive, setGlitchActive] = useState(false);
 
-  const normalName = "CAMUZARD Nicolas";
-  // const japName = "カミュザール 二コラ";
-  // const twName = "卡穆扎爾 尼可拉";
 
-  // Mapping direct des segments
-  const nameSegments = [
-    { normal: "CA", glitchTw: "卡", glitchJp: "カ" },
-    { normal: "MU", glitchTw: "穆", glitchJp: "ミュ" },
-    { normal: "ZA", glitchTw: "扎", glitchJp: "ザ" },
-    { normal: "RD", glitchTw: "爾", glitchJp: "ール" },
-    { normal: " ", glitchTw: " ", glitchJp: " " },
-    { normal: "Ni", glitchTw: "尼", glitchJp: "二" },
-    { normal: "co", glitchTw: "可", glitchJp: "コ" },
-    { normal: "las", glitchTw: "拉", glitchJp: "ラ" },
-  ];
-  const glitchText = () => {
-    return nameSegments
-      .map((segment) => {
-        const rand = Math.random();
-        if (rand < 0.4) return segment.glitchJp;
-        if (rand < 0.7) return segment.glitchTw;
-        return segment.normal;
-      })
-      .join("");
-  };
-
-  useEffect(() => {
-    const glitchInterval = setInterval(() => {
-      setGlitchActive(true);
-      setTimeout(() => setGlitchActive(false), 300);
-    }, 4000);
-
-    return () => clearInterval(glitchInterval);
-  }, []);
-  {
-    /*}
-  const glitchText = () => {
-    return nameSegments
-      .map((segment) => {
-        return Math.random() < 0.7 ? segment.glitch : segment.normal;
-      })
-      .join("");
-  };
-
-  useEffect(() => {
-    const glitchInterval = setInterval(() => {
-      setGlitchActive(true);
-      setTimeout(() => setGlitchActive(false), 300);
-    }, 4000);
-
-    return () => clearInterval(glitchInterval);
-  }, []);
-*/
-  }
   useEffect(() => {
     const handleScroll = () => {
       const sections = [
@@ -109,13 +56,25 @@ export default function Portfolio() {
   }
 
   const projects = [
-    //  CONCIERGE IA (déjà parfait)
+    //  MSN MESSAGER
+    {
+      title: "MSN messager - clone de Discode",
+      description:
+        "clone de Discord en React avec authentification, salons de discussion.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "websockets"],
+      role: "developpeur fullstack",
+      challenge: "Première integration d'un web socket.",
+      solution: " ",
+      github: "#",
+      demo: "# ",
+    },
+    //  CONCIERGE IA
     {
       title: "CONCIERGE IA - Application web",
       description:
         "Conception d'une IA de conciergerie hôtelière avec RAG (LlamaIndex) : Q&A clients, réservation services, informations géolocalisées, API météo temps réel et système de recommandation basé sur les préférences utilisateur.",
       tech: ["Python", "OpenAI", "LlamaIndex"],
-      role: "SCRUM Master - RAG & Embeddings vectoriels",
+      role: "Product Owner, SCRUM Master - RAG & Embeddings vectoriels",
       challenge:
         "Première immersion LLM : intégration, coûts API, performances.",
       solution:
@@ -124,7 +83,7 @@ export default function Portfolio() {
       demo: "https://conciergerie-ai.base44.app/",
     },
 
-    //  ZELDAMAN (syntaxe + ortho corrigée)
+    //  ZELDAMAN
     {
       title: "ZELDAMAN - Jeu 2D Java",
       description:
@@ -154,7 +113,7 @@ export default function Portfolio() {
 
     //  HANGMAN
     {
-      title: "Hangman 'Telles no Télés' - Python CLI",
+      title: "Hangman 'Telles no Tailes' - Python",
       description:
         "Jeu du pendu terminal avec rendu ASCII art et dictionnaire embarqué.",
       tech: ["Python"],
@@ -180,9 +139,9 @@ export default function Portfolio() {
       demo: "#",
     },
 
-    //  FACEUP (fusion des 2 doublons)
+    //  FACEUP
     {
-      title: "FaceUp - Réseau social mobile",
+      title: "FaceUp - instagrame Lite",
       description:
         "Partage photos temps réel : caméra, Cloudinary, WebSockets.",
       tech: ["React Native", "Expo", "Cloudinary", "Express", "MongoDB"],
@@ -232,7 +191,7 @@ export default function Portfolio() {
       demo: "#",
     },
 
-    //  MYMOOVIZ (description corrigée)
+    //  MYMOOVIZ
     {
       title: "myMOOVIZ - Recommandation films",
       description:
@@ -304,6 +263,7 @@ export default function Portfolio() {
       "excalidraw",
       "Jenkins",
       "Docker",
+      "WebSockets",
     ],
     soft: [
       "Communication",
@@ -387,24 +347,8 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section id="accueil" className="my-5 pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1
-            className="text-5xl md:text-6xl font-bold text-slate-900 mb-4 relative"
-            onMouseEnter={() => setGlitchActive(true)}
-            onMouseLeave={() => setGlitchActive(false)}
-            style={{ fontFamily: "monospace" }}
-          >
-            {glitchActive ? glitchText() : normalName}
-            <style>{`
-              @keyframes glitch {
-                0% { transform: translate(0); }
-                20% { transform: translate(-2px, 2px); }
-                40% { transform: translate(-2px, -2px); }
-                60% { transform: translate(2px, 2px); }
-                80% { transform: translate(2px, -2px); }
-                100% { transform: translate(0); }
-              }
-            `}</style>
-          </h1>
+          <GlitchName />
+     
           <p className="text-2xl md:text-3xl text-blue-600 font-semibold mb-6">
             Développeur Fullstack applications Web & Mobile
           </p>
@@ -434,42 +378,72 @@ export default function Portfolio() {
         </div>
       </section>
       {/* Projects Section */}
-      <section id="projets" className="py-20 bg-white px-4 sm:px-6 lg:px-8">
+      {/*
+      <section id="projets" className="relative py-20 px-4 sm:px-6 lg:px-8">
+        <div
+          className="absolute inset-0 bg-black opacity-30"
+          style={{
+            backgroundImage: `url(/me.jpeg)`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></div>
+        <div className="relative z-10 max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">
+            Mes Projets
+          </h2>
+
+        </div>
+      </section>
+      */}
+      <section
+        id="projets"
+        className="py-20 bg-white px-4 sm:px-6 lg:px-8"
+        style={{
+          backgroundImage: `url(/me.png)`, // img de moi en bg
+          backgroundSize: "auto 60%",
+          backgroundPosition: "top",
+          backgroundRepeat: "repeat", //repeat pour le moment avant de changé vers un suivie de l'image sur toute la section projet
+        }}
+      >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
+          <h2 className="text-white/95 text-4xl font-bold text-slate-900 mb-12 text-center">
             Mes Projets
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br 
-                from-slate-50 
-                via-gray-100 
-                to-cyan-50 
-                hover:from-fuchsia-100 
-                hover:to-slate-50 
-                rounded-xl 
-                p-6 
-                hover:shadow-lg 
-                transition-[shadow_1s, bg_1s
-                ] 
-                duration-700"
+                className="relative bg-gradient-to-br 
+    from-slate-50/20 
+    via-gray-100/20 
+    to-cyan-50/20 
+    hover:from-fuchsia-100/25 
+    hover:to-slate-50/25 
+    backdrop-blur-md
+    border border-white/10
+    rounded-xl 
+    p-6 
+    hover:shadow-lg 
+    transition-all
+    duration-700"
               >
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                <h3 className="text-white/95 text-2xl font-bold text-slate-900 mb-3">
                   {project.title}
                 </h3>
-                <p className="text-slate-600 mb-4">{project.description}</p>
+                <p className="text-white/95 text-slate-600 mb-4">
+                  {project.description}
+                </p>
 
                 <div className="mb-4">
-                  <p className="text-sm font-semibold text-slate-700 mb-2">
+                  <p className="text-sm text-white/95 font-semibold text-slate-700 mb-2">
                     Technologies :
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm"
+                        className="px-3 py-1 bg-blue-100/60 backdrop-blur-sm text-blue-700 rounded-full text-sm"
                       >
                         {tech}
                       </span>
@@ -478,40 +452,50 @@ export default function Portfolio() {
                 </div>
 
                 <div className="mb-4">
-                  <p className="text-sm font-semibold text-slate-700 mb-1">
+                  <p className="text-white/95 text-sm font-semibold text-slate-700 mb-1">
                     Rôle :
                   </p>
-                  <p className="text-slate-600 text-sm">{project.role}</p>
+                  <p className="text-white/95 text-slate-600 text-sm">
+                    {project.role}
+                  </p>
                 </div>
 
                 <div className="mb-4">
-                  <p className="text-sm font-semibold text-slate-700 mb-1">
+                  <p className="text-white/95 text-sm font-semibold text-slate-700 mb-1">
                     Défi :
                   </p>
-                  <p className="text-slate-600 text-sm">{project.challenge}</p>
+                  <p className="text-white/95 text-slate-600 text-sm">
+                    {project.challenge}
+                  </p>
                 </div>
 
                 <div className="mb-4">
-                  <p className="text-sm font-semibold text-slate-700 mb-1">
+                  <p className="text-white/95 text-sm font-semibold text-slate-700 mb-1">
                     Solution :
                   </p>
-                  <p className="text-slate-600 text-sm">{project.solution}</p>
+                  <p className="text-white/95 text-slate-600 text-sm">
+                    {project.solution}
+                  </p>
                 </div>
 
                 <div className="flex gap-4 mt-6">
                   <a
                     href={project.github}
-                    className="flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors"
+                    className="text-white/95 flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors"
                   >
                     <Github size={20} />
-                    <span className="text-sm font-semibold">Code</span>
+                    <span className="text-white/95 text-sm font-semibold">
+                      Code
+                    </span>
                   </a>
                   <a
                     href={project.demo}
-                    className="flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors"
+                    className="text-white/95 flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors"
                   >
                     <ExternalLink size={20} />
-                    <span className="text-sm font-semibold">Démo</span>
+                    <span className="text-white/95 text-sm font-semibold">
+                      Démo
+                    </span>
                   </a>
                 </div>
               </div>
