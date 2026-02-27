@@ -130,14 +130,17 @@ const About = () => {
           </p>
         </div>
 
-        <a
-          href="/analyse.pdf"
-          download
-          className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors font-semibold ml-60 px-6 py-4"
-        >
-          <Download size={20} />
-          Télécharger le Bilan Complet
-        </a>
+        <div className="flex justify-center">
+          <a
+            href="/analyse.pdf"
+            download
+            // className="inline-flex items-center justify-center gap-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors font-semibold ml-60 px-6 py-4"
+            className="inline-flex items-center justify-center gap-2 px-6 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors font-semibold w-full sm:w-auto"
+          >
+            <Download size={20} />
+            Télécharger le Bilan Complet
+          </a>
+        </div>
       </div>
     </div>
   );
