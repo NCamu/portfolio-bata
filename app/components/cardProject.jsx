@@ -15,6 +15,19 @@ import {
 
 const CardProject = () => {
   const projects = [
+    // MONITORINGCLUB
+    {
+      title: "MONITORINGCLUB",
+      description:
+        "Application web de monitoring/gestion des performances de joueurs d'une equipe de football, ",
+      tech: ["react", "TypeScript", "NestJS"],
+      role: "developpeur fullstack",
+      challenge: "apprendre NestJS, et approfondir les connaissances en React",
+      solution: " ",
+      github: "https://github.com/NCamu/monitoringClub",
+      demo: "#",
+    },
+    // TAMAGOCHI
     {
       title: "TAMAGOCHI- Virtual pet",
       description:
