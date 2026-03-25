@@ -1,3 +1,5 @@
+import TechPieChart from "./TechPieChart";
+
 import {
   Menu,
   X,
@@ -20,7 +22,7 @@ const CardProject = () => {
       title: "MONITORINGCLUB",
       description:
         "Application web de monitoring/gestion des performances de joueurs d'une equipe de football, ",
-      tech: ["react", "TypeScript", "NestJS"],
+      tech: ["React", "TypeScript", "NestJS", "CSS"],
       role: "developpeur fullstack",
       challenge: "apprendre NestJS, et approfondir les connaissances en React",
       solution: " ",
@@ -32,8 +34,8 @@ const CardProject = () => {
       title: "TAMAGOCHI- Virtual pet",
       description:
         "Application web de simulation d'un animal virtuel avec gestion de l'alimentation, de la santé, du bien-être et des interactions.",
-      tech: ["java"],
-      role: "developpeur fullstack",
+      tech: ["Java"],
+      role: "developpeur software orienté objet",
       challenge: "approfondir les connaissances en java, et la POO",
       solution: " ",
       github: "https://github.com/NCamu/pTamago",
@@ -45,7 +47,15 @@ const CardProject = () => {
       title: "ORANGE x {Epitech} - outil de gestion de projet",
       description:
         "outil Agent IA de gestion de projet capable de planifier des taches de maintenance en fonction d'un reseau client defini par un achitecte (prend en parametre different type de documents, .xlsx .pdf) et modulable selon ses besoins, et renvoint des rapports de maintenance necessaire et un plan d'action detaillé pour les techniciens.",
-      tech: ["React", "Node.js", "Express", "MongoDB", "Groq"],
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Groq",
+        "CSS",
+        "JavaScript",
+      ],
       role: "developpeur du prompt, et du front end",
       challenge:
         "utilisation de Groq pour la partie RAG, et integration dans une application web",
@@ -59,7 +69,15 @@ const CardProject = () => {
       title: "MSN messager - clone de Discode",
       description:
         "clone de Discord en React avec authentification, salons de discussion.",
-      tech: ["React", "Node.js", "Express", "MongoDB", "websockets"],
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Websockets",
+        "CSS",
+        "JavaScript",
+      ],
       role: "developpeur fullstack",
       challenge: "Première integration d'un web socket.",
       solution: " ",
@@ -100,7 +118,7 @@ const CardProject = () => {
       title: "JobBoard - Site recherche d'emploi",
       description:
         "Plateforme fullstack : recherche offres, sessions utilisateur, CRUD sécurisé.",
-      tech: ["HTML/CSS", "JavaScript", "PHP", "SQL"],
+      tech: ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       role: "Développeur interface utilisateur",
       challenge:
         "Apprendre PHP/SQL, interface intuitive, sessions, formulaires sécurisés.",
@@ -129,7 +147,7 @@ const CardProject = () => {
       title: "MooveIt (team de 5) - App Mobile",
       description:
         "Suivi activité physique gamifié : défis amis, accompagnement vidéo, matching préférences.",
-      tech: ["React Native", "TypeScript", "Node.js", "MongoDB"],
+      tech: ["React Native", "TypeScript", "Node.js", "MongoDB", "CSS", "API"],
       role: "Développeur Fullstack",
       challenge: "App mobile gamifiée performante + matching utilisateurs.",
       solution: "Algo recommandation + streaming vidéo optimisé.",
@@ -142,7 +160,16 @@ const CardProject = () => {
       title: "FaceUp - instagrame Lite",
       description:
         "Partage photos temps réel : caméra, Cloudinary, WebSockets.",
-      tech: ["React Native", "Expo", "Cloudinary", "Express", "MongoDB"],
+      tech: [
+        "React Native",
+        "Expo",
+        "Cloudinary",
+        "Express",
+        "MongoDB",
+        "CSS",
+        "API",
+        "JavaScript",
+      ],
       role: "Développeur Fullstack",
       challenge: "Synchronisation données temps réel multi-utilisateurs.",
       solution: "WebSockets + gestion conflits/permissions avancées.",
@@ -155,7 +182,15 @@ const CardProject = () => {
       title: "Locapic - App géolocalisation",
       description:
         "Gestion favoris lieux : maps, recherche, authentification sécurisée.",
-      tech: ["React Native", "Express", "Mongoose", "Bcrypt"],
+      tech: [
+        "React Native",
+        "Express",
+        "Mongoose",
+        "Bcrypt",
+        "CSS",
+        "API",
+        "JavaScript",
+      ],
       role: "Développeur Backend",
       challenge: "Authentification robuste et sécurisée.",
       solution: "Middleware tokens + refresh tokens + hashage Bcrypt.",
@@ -168,7 +203,15 @@ const CardProject = () => {
       title: "Hackatweet (hackathon) - Clone Twitter",
       description:
         "Publication tweets, follow, messagerie instantanée (72h hackathon).",
-      tech: ["React", "Express", "MongoDB", "Mongoose"],
+      tech: [
+        "React",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "CSS",
+        "API",
+        "JavaScript",
+      ],
       role: "Développeur Frontend",
       challenge: "Site fonctionnel UX/UI en 72h.",
       solution: "Stack MERN optimisée deadlines courtes.",
@@ -181,7 +224,7 @@ const CardProject = () => {
       title: "MorningNews - Agrégateur news",
       description:
         "Articles personnalisés : filtres catégories/sources, API externes.",
-      tech: ["React", "Express", "MongoDB"],
+      tech: ["React", "Express", "MongoDB", "CSS", "JavaScript", "API"],
       role: "Développeur Fullstack",
       challenge: "Fetch/affichage dynamique données externes.",
       solution: "Props typées + optimisation rendu React.",
@@ -194,7 +237,7 @@ const CardProject = () => {
       title: "myMOOVIZ - Recommandation films",
       description:
         "Plateforme films : recherche, recommandations API externe, UI moderne.",
-      tech: ["React", "Express", "MongoDB"],
+      tech: ["React", "Express", "MongoDB", "CSS", "API", "JavaScript"],
       role: "Développeur Fullstack",
       challenge: "Intégration API externe recommandations.",
       solution: "Cache intelligent + lazy loading.",
@@ -206,7 +249,7 @@ const CardProject = () => {
     {
       title: "Tickethack (hackathon) - Clone SNCF",
       description: "Recherche trains, réservation, paiement (72h hackathon).",
-      tech: ["HTML/CSS", "JavaScript", "Express", "MongoDB"],
+      tech: ["HTML", "CSS", "JavaScript", "Express", "MongoDB"],
       role: "Développeur Frontend",
       challenge: "Composants flexibles/performants réutilisables.",
       solution: "Design system modulaire.",
@@ -218,7 +261,7 @@ const CardProject = () => {
     {
       title: "WeatherApp - App météo",
       description: "Interface météo dynamique : API temps réel, prévisions.",
-      tech: ["React", "API Météo", "CSS"],
+      tech: ["React", "API", "CSS", "JavaScript"],
       role: "Développeur Frontend",
       challenge: "Parser/afficher API météo dynamiquement.",
       solution: "Fetch optimisé + rendu conditionnel.",
@@ -228,25 +271,27 @@ const CardProject = () => {
   ];
 
   return (
-    <section
-      id="projets"
-      className="py-20 bg-white px-4 sm:px-6 lg:px-8"
-      style={{
-        backgroundImage: `url(/me.png)`, // img de moi en bg
-        backgroundSize: "auto 60%",
-        backgroundPosition: "top",
-        backgroundRepeat: "repeat", //repeat pour le moment avant de changé vers un suivie de l'image sur toute la section projet
-      }}
-    >
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-white/95 text-5xl font-bold text-slate-900 mb-12 text-center">
-          Mes Projets
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="relative bg-gradient-to-br 
+    <>
+      
+      <section
+        id="projets"
+        className="py-20 bg-white px-4 sm:px-6 lg:px-8"
+        style={{
+          backgroundImage: `url(/me.png)`, // img de moi en bg
+          backgroundSize: "auto 60%",
+          backgroundPosition: "top",
+          backgroundRepeat: "repeat", //repeat pour le moment avant de changé vers un suivie de l'image sur toute la section projet
+        }}
+      >
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-white/95 text-5xl font-bold text-slate-900 mb-12 text-center">
+            Mes Projets
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="relative bg-gradient-to-br 
     from-slate-50/20 
     via-gray-100/20 
     to-cyan-50/20 
@@ -259,82 +304,86 @@ const CardProject = () => {
     hover:shadow-lg 
     transition-all
     duration-700"
-            >
-              <h3 className="text-white/95 text-2xl font-bold text-slate-900 mb-3">
-                {project.title}
-              </h3>
-              <p className="text-white/95 text-slate-600 mb-4">
-                {project.description}
-              </p>
-
-              <div className="mb-4">
-                <p className="text-sm text-white/95 font-semibold text-slate-700 mb-2">
-                  Technologies :
+              >
+                <h3 className="text-white/95 text-2xl font-bold text-slate-900 mb-3">
+                  {project.title}
+                </h3>
+                <p className="text-white/95 text-slate-600 mb-4">
+                  {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="px-3 py-1 bg-blue-100/60 backdrop-blur-sm text-blue-700 rounded-full text-sm"
-                    >
-                      {tech}
+
+                <div className="mb-4">
+                  <p className="text-sm text-white/95 font-semibold text-slate-700 mb-2">
+                    Technologies :
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1 bg-blue-100/60 backdrop-blur-sm text-blue-700 rounded-full text-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <p className="text-white/95 text-sm font-semibold text-slate-700 mb-1">
+                    Rôle :
+                  </p>
+                  <p className="text-white/95 text-slate-600 text-sm">
+                    {project.role}
+                  </p>
+                </div>
+
+                <div className="mb-4">
+                  <p className="text-white/95 text-sm font-semibold text-slate-700 mb-1">
+                    Défi :
+                  </p>
+                  <p className="text-white/95 text-slate-600 text-sm">
+                    {project.challenge}
+                  </p>
+                </div>
+
+                <div className="mb-4">
+                  <p className="text-white/95 text-sm font-semibold text-slate-700 mb-1">
+                    Solution :
+                  </p>
+                  <p className="text-white/95 text-slate-600 text-sm">
+                    {project.solution}
+                  </p>
+                </div>
+
+                <div className="flex gap-4 mt-6">
+                  <a
+                    href={project.github}
+                    className="text-white/95 flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Github size={20} />
+                    <span className="text-white/95 text-sm font-semibold">
+                      Code
                     </span>
-                  ))}
+                  </a>
+                  <a
+                    href={project.demo}
+                    className="text-white/95 flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors"
+                  >
+                    <ExternalLink size={20} />
+                    <span className="text-white/95 text-sm font-semibold">
+                      Démo
+                    </span>
+                  </a>
                 </div>
               </div>
-
-              <div className="mb-4">
-                <p className="text-white/95 text-sm font-semibold text-slate-700 mb-1">
-                  Rôle :
-                </p>
-                <p className="text-white/95 text-slate-600 text-sm">
-                  {project.role}
-                </p>
-              </div>
-
-              <div className="mb-4">
-                <p className="text-white/95 text-sm font-semibold text-slate-700 mb-1">
-                  Défi :
-                </p>
-                <p className="text-white/95 text-slate-600 text-sm">
-                  {project.challenge}
-                </p>
-              </div>
-
-              <div className="mb-4">
-                <p className="text-white/95 text-sm font-semibold text-slate-700 mb-1">
-                  Solution :
-                </p>
-                <p className="text-white/95 text-slate-600 text-sm">
-                  {project.solution}
-                </p>
-              </div>
-
-              <div className="flex gap-4 mt-6">
-                <a
-                  href={project.github}
-                  className="text-white/95 flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors"
-                >
-                  <Github size={20} />
-                  <span className="text-white/95 text-sm font-semibold">
-                    Code
-                  </span>
-                </a>
-                <a
-                  href={project.demo}
-                  className="text-white/95 flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors"
-                >
-                  <ExternalLink size={20} />
-                  <span className="text-white/95 text-sm font-semibold">
-                    Démo
-                  </span>
-                </a>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+      </section>{" "}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <TechPieChart projects={projects} />
       </div>
-    </section>
+    </>
   );
 };
 
