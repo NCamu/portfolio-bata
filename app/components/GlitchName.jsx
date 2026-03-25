@@ -91,6 +91,7 @@ export default function GlitchName() {
         letterSpacing: "0.02em",
         //  whiteSpace: "pre", // ⚠️ INDISPENSABLE
         minHeight: "1.2em",
+        color: "rgba(0, 0, 0, 0.84)",
       }}
     >
       {text}

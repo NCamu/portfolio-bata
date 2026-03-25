@@ -164,18 +164,24 @@ const TechPieChart = ({ projects }) => {
               </span>
               <span
                 className="text-base font-semibold text-grey/90"
-                style={{ fontSize: "1.75rem" }}
+                style={{ fontSize: "1.75rem", color: "rgba(0, 0, 0, 0.94)" }}
               >
                 {active.name}
               </span>
             </div>
 
             {/* Divider */}
-            <div className="border-t border-grey/10" />
+            <div
+              className="border-t border-grey/10"
+              style={{ color: "rgba(0, 0, 0, 0.84)" }}
+            />
 
             {/* Projects list */}
             <div className="space-y-1.5">
-              <p className="text-xs text-grey/40 uppercase tracking-wider mb-2">
+              <p
+                className="text-xs text-grey/40 uppercase tracking-wider mb-2"
+                style={{ color: "rgba(0, 0, 0, 0.84)" }}
+              >
                 Projets ({active.projects.length})
               </p>
               {active.projects.map((proj, i) => (
@@ -184,7 +190,12 @@ const TechPieChart = ({ projects }) => {
                     className="w-1.5 h-1.5 rounded-full flex-shrink-0"
                     style={{ background: activeColor }}
                   />
-                  <span className="text-sm text-grey/80">{proj.title}</span>
+                  <span
+                    className="text-sm text-grey/80"
+                    style={{ color: "rgba(0, 0, 0, 0.84)" }}
+                  >
+                    {proj.title}
+                  </span>
                 </div>
               ))}
             </div>
