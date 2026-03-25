@@ -1,14 +1,14 @@
 import { useMemo, useRef, useEffect, useState } from "react";
 
 const COLORS = [
-  "#3b82f6",
-  "#10b981",
-  "#f59e0b",
-  "#ef4444",
-  "#8b5cf6",
-  "#06b6d4",
-  "#84cc16",
-  "#f97316",
+  "#eff1ec",
+  "#e3dac9",
+  "#424743",
+  "#057569",
+  "#547d81",
+  "#77a3a6",
+  "#a3c4b1",
+  //"#f97316",
 ];
 
 const TechPieChart = ({ projects }) => {
@@ -162,7 +162,10 @@ const TechPieChart = ({ projects }) => {
               >
                 {active.percent}%
               </span>
-              <span className="text-base font-semibold text-grey/90" style={{ fontSize: "1.75rem" }}>
+              <span
+                className="text-base font-semibold text-grey/90"
+                style={{ fontSize: "1.75rem" }}
+              >
                 {active.name}
               </span>
             </div>
