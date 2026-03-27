@@ -272,7 +272,6 @@ const CardProject = () => {
 
   return (
     <>
-      
       <section
         id="projets"
         className="py-20 bg-white px-4 sm:px-6 lg:px-8"

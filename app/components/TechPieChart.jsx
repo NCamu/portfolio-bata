@@ -79,9 +79,9 @@ const TechPieChart = ({ projects }) => {
             {
               data: data.map((d) => d.value),
               backgroundColor: data.map((_, i) => COLORS[i % COLORS.length]),
-              borderColor: "rgba(255,255,255,0.15)",
+              borderColor: "rgba(255, 255, 255, 0.15)",
               borderWidth: 2,
-              hoverOffset: 10,
+              hoverOffset: 55,
             },
           ],
         },
@@ -164,7 +164,11 @@ const TechPieChart = ({ projects }) => {
               </span>
               <span
                 className="text-base font-semibold text-grey/90"
-                style={{ fontSize: "1.75rem", color: "rgba(0, 0, 0, 0.94)" }}
+                style={{
+                  fontFamily: "monospace",
+                  fontSize: "1.75rem",
+                  color: "rgba(0, 0, 0, 0.94)",
+                }}
               >
                 {active.name}
               </span>
