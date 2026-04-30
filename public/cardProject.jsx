@@ -1,4 +1,4 @@
-import TechPieChart from "./TechPieChart";
+import TechPieChart from "../app/components/TechPieChart";
 
 import {
   Menu,
@@ -17,6 +17,40 @@ import {
 
 const CardProject = () => {
   const projects = [
+    // DISCORD CLONE
+    {
+      title: "RTC DISCORD ",
+      description: "Clone de Discord ",
+      tech: [
+        "React",
+        "TypeScript",
+        "web-socket",
+        "CSS",
+        "tailwind",
+        "docker",
+        "mongoDB",
+      ],
+      role: "developpeur fullstack",
+      challenge:
+        "en React avec authentification, salons de discussion, et intégration Web-SOCKET pour la communication en temps réel.multi channels, messages privés, gestion utilisateurs, et une interface utilisateur moderne et responsive.",
+      solution: " ",
+      github: "https://github.com/EpitechMscProPromo2028/T-JSF-600-NCE_2",
+      demo: "#",
+    },
+
+    // FAMILYPLAN
+    {
+      title: "FAMILYPLAN",
+      description: "Application web de gestion de planification familiale, ",
+      tech: ["React", "TypeScript", "NestJS", "CSS", "tailwind", "prisma"],
+      role: "developpeur fullstack",
+      challenge:
+        "creation d'une application de gestion de planification familiale, apprendre a utilisé prisma, et approfondir les connaissances en NestJS",
+      solution: " ",
+      github: "https://github.com/NCamu/familyPlan",
+      demo: "#",
+    },
+
     // MONITORINGCLUB
     {
       title: "MONITORINGCLUB",
@@ -64,26 +98,6 @@ const CardProject = () => {
       demo: "https://www.canva.com/design/DAHAubUAyFI/VFR5FS5gSJPGDVTQ5jAWqQ/edit ",
     },
 
-    //  MSN MESSAGER
-    {
-      title: "MSN messager - clone de Discode",
-      description:
-        "clone de Discord en React avec authentification, salons de discussion.",
-      tech: [
-        "React",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Websockets",
-        "CSS",
-        "JavaScript",
-      ],
-      role: "developpeur fullstack",
-      challenge: "Première integration d'un web socket.",
-      solution: " ",
-      github: "https://github.com/EpitechMscProPromo2028/T-JSF-600-NCE_2",
-      demo: "# ",
-    },
     //  CONCIERGE IA
     {
       title: "CONCIERGE IA - Application web",
@@ -276,7 +290,7 @@ const CardProject = () => {
         id="projets"
         className="py-20 bg-white px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: `url(/me.png)`, // img de moi en bg
+          backgroundImage: `url(/me1.jpeg)`, // img de moi en bg
           backgroundSize: "auto 60%",
           backgroundPosition: "top",
           backgroundRepeat: "repeat", //repeat pour le moment avant de changé vers un suivie de l'image sur toute la section projet
