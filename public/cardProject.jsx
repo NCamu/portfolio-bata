@@ -25,10 +25,10 @@ const CardProject = () => {
         "React",
         "TypeScript",
         "web-socket",
-        "CSS",
+        "Node.js",
         "tailwind",
         "docker",
-        "mongoDB",
+        "MongoDB",
       ],
       role: "developpeur fullstack",
       challenge:
@@ -42,7 +42,7 @@ const CardProject = () => {
     {
       title: "FAMILYPLAN",
       description: "Application web de gestion de planification familiale, ",
-      tech: ["React", "TypeScript", "NestJS", "CSS", "tailwind", "prisma"],
+      tech: ["React", "TypeScript", "NestJS", "CSS", "tailwind", "Prisma"],
       role: "developpeur fullstack",
       challenge:
         "creation d'une application de gestion de planification familiale, apprendre a utilisé prisma, et approfondir les connaissances en NestJS",
