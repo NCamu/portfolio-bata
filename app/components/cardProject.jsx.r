@@ -1,4 +1,4 @@
-import TechPieChart from "../app/components/TechPieChart";
+import TechPieChart from "./TechPieChart";
 
 import {
   Menu,

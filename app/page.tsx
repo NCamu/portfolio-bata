@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import GlitchName from "./components/GlitchName";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import CardProject from "../public/cardProject";
+import CardProject from "./components/cardProject";
 import {
   Menu,
   X,
