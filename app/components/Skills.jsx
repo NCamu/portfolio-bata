@@ -121,7 +121,7 @@ const Skills = () => {
             <div className="flex items-center gap-3 mb-4">
               <Database className="text-blue-600" size={28} />
               <h3 className="text-xl font-bold text-slate-900">
-                Compétences Secondaires
+                Compétences non techniques
               </h3>
             </div>
             <div className="flex flex-wrap gap-2">
